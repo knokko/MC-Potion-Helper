@@ -1,0 +1,8 @@
+name: PotionHelper
+main: nl.knokko.potions.plugin.PotionsPlugin
+version: 1.0
+commands:
+  potions:
+    description: Create, modify or give custom potions
+    useage: /potions register/give/addeffect/removeeffect/delete
+    aliases: [pots, potion]
