@@ -29,9 +29,11 @@ public class PotionsPlugin extends JavaPlugin {
 		reloadConfig();
 		FileConfiguration config = getConfig();
 		ConfigurationSection potionsSection = config.getConfigurationSection("potions");
-		Set<String> keys = potionsSection.getKeys(false);
-		for (String key : keys)
-			potions.put(key, potionsSection.getItemStack(key));
+		if (potionsSection != null) {
+			Set<String> keys = potionsSection.getKeys(false);
+			for (String key : keys)
+				potions.put(key, potionsSection.getItemStack(key));
+		}
 		getCommand("potions").setExecutor(new CommandPotions());
 	}
 	

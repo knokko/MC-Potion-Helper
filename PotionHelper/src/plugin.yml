@@ -4,5 +4,5 @@ version: 1.0
 commands:
   potions:
     description: Create, modify or give custom potions
-    useage: /potions register/give/addeffect/removeeffect/delete
+    useage: /potions register/give/addeffect/removeeffect/delete/list/effects
     aliases: [pots, potion]
